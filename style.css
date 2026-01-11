@@ -1715,20 +1715,25 @@ td {
 }
 
 /* =========================
-   RESPONSIVE MOBILE
+   MOBILE FIX – FULL
    ========================= */
 @media (max-width: 768px) {
 
-  /* BODY */
+  /* ===== BODY ===== */
   body {
-    background-attachment: scroll;
     padding-top: 90px;
+    background-attachment: scroll;
   }
 
-  /* HEADER */
+  /* ===== HEADER ===== */
   header {
-    padding: 10px 20px;
+    padding: 10px 16px;
     flex-wrap: wrap;
+    border-radius: 0 0 14px 14px;
+  }
+
+  .logo {
+    margin: 0 auto;
   }
 
   .navigation {
@@ -1736,24 +1741,25 @@ td {
     margin-top: 10px;
     flex-wrap: wrap;
     justify-content: center;
+    width: 100%;
   }
 
   .navigation a,
   .navigation select {
-    margin: 8px 12px;
-    font-size: 1em;
+    margin: 6px 10px;
+    font-size: 14px;
   }
 
-  /* HERO */
+  /* ===== HERO ===== */
   .hero {
     height: auto;
     top: 0;
-    padding: 60px 0;
+    padding: 80px 0 40px;
   }
 
   .hero-content {
     flex-direction: column;
-    padding: 0 20px;
+    padding: 0 16px;
     text-align: center;
   }
 
@@ -1761,42 +1767,69 @@ td {
     margin-left: 0;
   }
 
-  .hero-text h1 {
-    font-size: 42px;
+  .hero-text h4 {
+    font-size: 13px;
   }
 
-  /* INTRO */
+  .hero-text h1 {
+    font-size: 40px;
+    line-height: 1.2;
+  }
+
+  .hero-text h2 {
+    font-size: 13px;
+  }
+
+  .hero-text p {
+    font-size: 14px;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  /* ===== INTRO ===== */
   .intro {
-    padding: 40px 6%;
+    padding: 40px 16px;
   }
 
   .intro h1 {
-    font-size: 30px;
+    font-size: 28px;
   }
 
   .intro p {
     font-size: 14px;
   }
 
-  /* VIDEO */
-  .video-container {
+  /* ===== VIDEO ===== */
+  .video-container,
+  .video-small,
+  .video-bg {
     width: 100%;
     max-width: 100%;
     margin: 20px auto;
   }
 
-  /* CONTENT GRID */
+  /* ===== CONTENT GRID ===== */
   .content {
     grid-template-columns: 1fr;
     gap: 30px;
     margin-top: 60px;
   }
 
-  /* LỚP – GIỚI THIỆU */
+  /* ===== GIỚI THIỆU LỚP ===== */
+  .lop-gioithieu {
+    padding-left: 0;
+  }
+
   .gioithieu-layout {
     flex-direction: column;
     margin-left: 0;
     gap: 30px;
+    align-items: center;
   }
 
   .image-box,
@@ -1806,10 +1839,46 @@ td {
   }
 
   .main-img {
-    height: 260px;
+    height: 240px;
   }
 
-  /* TABLE */
+  .gioithieu-text h1 {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .gioithieu-text p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  /* ===== FORM ===== */
+  .box {
+    flex-direction: column;
+    padding: 40px 16px;
+    gap: 40px;
+  }
+
+  .form-box {
+    width: 100%;
+    min-width: unset;
+    padding: 26px 22px;
+  }
+
+  .form-box h2 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .subjects {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .note {
+    grid-template-columns: 1fr;
+  }
+
+  /* ===== TABLE ===== */
   .table-scroll {
     max-height: 400px;
   }
@@ -1818,32 +1887,64 @@ td {
     font-size: 13px;
   }
 
-  /* FORM */
-  .box {
-    flex-direction: column;
-    padding: 40px 20px;
-    gap: 40px;
-  }
-
-  .form-box {
-    width: 100%;
-    min-width: unset;
-  }
-
-  /* MEMORY */
+  /* ===== MEMORY (LỚP 11) ===== */
   .memory-box {
     flex-direction: column;
     text-align: center;
+    padding: 20px;
+  }
+
+  .memory-box.reverse {
+    flex-direction: column;
   }
 
   .memory-img {
-    margin: 0 0 20px;
+    width: 160px;
+    height: 160px;
+    margin: 0 auto 16px;
   }
 
-  /* MEMBERS */
+  /* ❌ TẮT HOVER ZOOM */
+  .memory-img:hover img {
+    transform: none;
+  }
+
+  .memory-text p {
+    font-size: 14px;
+  }
+
+  /* ===== SKILL (LỚP 12) ===== */
+  .skill-section {
+    padding: 60px 16px;
+  }
+
+  .skill-row {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .skill-row.reverse {
+    flex-direction: column;
+  }
+
+  .skill-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .skill-text h2 {
+    font-size: 26px;
+  }
+
+  .skill-text p {
+    font-size: 16px;
+  }
+
+  /* ===== MEMBERS ===== */
   .members-section {
     grid-template-columns: 1fr;
     gap: 30px;
+    padding: 40px 16px;
   }
 
   .member-cards {
@@ -1851,9 +1952,54 @@ td {
     justify-content: center;
   }
 
-  /* FOOTER */
+  .members-left h2,
+  .members-center h2 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  /* ===== CARD NHÓM ===== */
+  .the-1,
+  .the-2,
+  .the-3,
+  .the-4,
+  .the-5 {
+    flex-direction: column;
+    padding: 24px;
+    min-height: auto;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+    text-align: center;
+  }
+
+  .right h2 {
+    font-size: 24px;
+  }
+
+  .right p,
+  .right li {
+    font-size: 15px;
+  }
+
+  /* ===== ẢNH NHÓM ===== */
+  .nhom {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    margin-bottom: 60px;
+  }
+
+  .anh-nhom {
+    width: 100%;
+    height: auto;
+  }
+
+  /* ===== FOOTER ===== */
   .footer {
-    padding: 40px 20px 20px;
+    padding: 40px 16px 20px;
   }
 
   .footer-container {
@@ -1861,47 +2007,24 @@ td {
     gap: 30px;
   }
 
+  .footer-title {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .footer-text,
+  .footer-col h3,
+  .footer-col ul li {
+    text-align: center;
+  }
+
   .footer::before,
   .footer-bottom::before {
-    left: 20px;
-    right: 20px;
-  }
-
-  /* GROUP / CARD */
-  .the-1,
-  .the-2,
-  .the-3,
-  .the-4,
-  .the-5 {
-    flex-direction: column;
-    padding: 30px;
-  }
-
-  .left,
-  .right {
-    width: 100%;
-  }
-
-  .right h2 {
-    font-size: 26px;
-  }
-
-  .right p {
-    font-size: 16px;
-  }
-
-  /* NHÓM */
-  .nhom {
-    width: 100%;
-    height: auto;
-    padding: 10px;
-  }
-
-  .anh-nhom {
-    width: 100%;
-    height: auto;
+    left: 16px;
+    right: 16px;
   }
 }
+
 
 
 
