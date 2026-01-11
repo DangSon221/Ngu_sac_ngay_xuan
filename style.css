@@ -1720,9 +1720,12 @@ td {
 @media (max-width: 768px) {
 
   /* ===== BODY ===== */
-  body {
-    padding-top: 90px;
+    body {
+    padding-top: 150px;
     background-attachment: scroll;
+  }
+  .box {
+    margin-top: 20px;
   }
 
   /* ===== HEADER ===== */
@@ -2107,6 +2110,7 @@ td {
 
 
 }
+
 
 
 
