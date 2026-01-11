@@ -2023,7 +2023,92 @@ td {
     left: 16px;
     right: 16px;
   }
+    /* =====================================
+   MOBILE OPTIMIZED – LỊCH HỌC
+   ===================================== */
+@media (max-width: 768px) {
+
+  /* ===== CONTAINER ===== */
+  .container {
+    width: 100%;
+    padding: 20px 12px;
+  }
+
+  /* ===== THỜI KHÓA BIỂU ===== */
+  .tkb-wrapper {
+    display: flex;
+    flex-direction: column;     /* xếp dọc */
+    gap: 20px;
+    align-items: center;
+    transform: none;            /* bỏ lệch */
+  }
+
+  .tkb {
+    width: 100%;
+    max-width: 100%;
+    padding: 14px;
+    border-radius: 16px;
+  }
+
+  .tkb h2 {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  .tkb span {
+    font-size: 14px;
+  }
+
+  /* Cho bảng cuộn ngang nếu hẹp */
+  .tkb table {
+    min-width: 520px;
+    font-size: 13px;
+  }
+
+  .tkb {
+    overflow-x: auto;
+  }
+
+  /* ===== BẢNG CHUNG ===== */
+  table {
+    font-size: 13px;
+  }
+
+  th, td {
+    padding: 6px;
+  }
+
+  /* ===== TIÊU ĐỀ LỊCH THI ===== */
+  .title {
+    font-size: 26px;
+    margin: 50px 0 18px;
+  }
+
+  /* ===== LỊCH THI ===== */
+  .exam {
+    width: 100%;
+    border-radius: 16px;
+    overflow-x: auto;
+  }
+
+  .exam table {
+    min-width: 720px;
+    font-size: 13px;
+  }
+
+  .exam th {
+    font-size: 13px;
+  }
+
+  .exam td {
+    font-size: 13px;
+    padding: 6px;
+  }
+
 }
+
+}
+
 
 
 
