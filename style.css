@@ -1107,7 +1107,7 @@ td {
 .intro {
     background: #fff7ec;
     text-align: center;
-    padding: 70px 20%;
+    padding: 70px 5%;
 }
 
 .intro h1 {
@@ -1119,9 +1119,12 @@ td {
     margin: 20px 0 30px;
 }
 .video-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 30px auto;
+
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 */
-  height: 0;
+  aspect-ratio: 16 / 9;
   overflow: hidden;
   border-radius: 20px;
 }
@@ -1710,5 +1713,6 @@ td {
     border-radius: 18px;
 
 }
+
 
 
