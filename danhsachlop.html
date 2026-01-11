@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách lớp</title>
+    <link rel="shortcut icon" href="img/logonhom.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  
+    <header class="main-header">
+        
+        <a href="index.html" class="logo">
+            <img src="img/logonhom.png" width="80">
+        </a>        
+        <nav class="navigation">
+            <a href="index.html">Trang chủ</a>
+            <nav>
+                <ul>
+                    <li class="dropdown">
+                        <a href="#">Giới thiệu</a>
+                        <ul class="dropdown-content">
+                            <li><a href="thanhvien.html">Thành viên nhóm</a></li>
+                            <li><a href="Danhsachlop.html">Danh sách lớp</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="select-box">
+                <select onchange="location.href=this.value">
+                    <option value="">Lớp</option>
+                    <option value="Lop10.html">Lớp 10</option>
+                    <option value="Lop11.html">Lớp 11</option>
+                    <option value="Lop12.html">Lớp 12</option>
+                </select>
+            </div>
+            <a href="Lichhoc.html">Lịch học</a>
+            <a href="Dangki.html">Đăng kí</a>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Tìm kiếm">
+            </div>
+        </nav>
+        
+    </header>
+    <main class="content">
+        <!-- BẢNG DANH SÁCH LỚP -->
+        <section class="student-list">
+            <h3>Danh sách học sinh</h3>
+            <div class="table-scroll">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>Họ và tên</th>
+                            <th>Ngày sinh</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td>Nguyễn Hiền Thái An</td><td>06/09/2008</td></tr>
+                        <tr><td>2</td><td>Nguyễn Quốc Anh</td><td>16/02/2008</td></tr>
+                        <tr><td>3</td><td>Trần Phúc Minh Ân</td><td>09/08/2008</td></tr>
+                        <tr><td>4</td><td>Vũ Thanh Bình</td><td>23/04/2008</td></tr>
+                        <tr><td>5</td><td>Đặng Thị Mỹ Duyên</td><td>19/01/2008</td></tr>
+                        <tr><td>6</td><td>Lê Khả Đại Dương</td><td>01/04/2008</td></tr>
+                        <tr><td>7</td><td>Đỗ Hoàng Quốc Đạt</td><td>11/07/2008</td></tr>
+                        <tr><td>8</td><td>Nguyễn Phong Đạt</td><td>23/10/2008</td></tr>
+                        <tr><td>9</td><td>Lâm Khả Hãn</td><td>23/08/2008</td></tr>
+                        <tr><td>10</td><td>Nguyễn Anh Hào</td><td>24/09/2008</td></tr>
+                        <tr><td>11</td><td>Nguyễn Văn Hoàn Hảo</td><td>30/06/2008</td></tr>
+                        <tr><td>12</td><td>Tăng Gia Huy</td><td>09/05/2008</td></tr>
+                        <tr><td>13</td><td>Phạm Khánh Hưng</td><td>10/11/2008</td></tr>
+                        <tr><td>14</td><td>Trần Phạm Minh Khang</td><td>30/11/2008</td></tr>
+                        <tr><td>15</td><td>Trần Văn Minh</td><td>01/02/2008</td></tr>
+                        <tr><td>16</td><td>Nguyễn Thị Trà My</td><td>08/12/2008</td></tr>
+                        <tr><td>17</td><td>Nguyễn Thị Quế Ngân</td><td>03/12/2008</td></tr>
+                        <tr><td>18</td><td>Bùi Hồng Phát</td><td>03/07/2008</td></tr>
+                        <tr><td>19</td><td>Nguyễn Văn Phong</td><td>18/12/2008</td></tr>
+                        <tr><td>20</td><td>Trương Nhật Phú</td><td>08/02/2008</td></tr>
+                        <tr><td>21</td><td>Mai Nguyễn Hoàng Phúc</td><td>18/02/2008</td></tr>
+                        <tr><td>22</td><td>Phan Thanh Hoài Phúc</td><td>25/11/2008</td></tr>
+                        <tr><td>23</td><td>Đỗ Như Quỳnh</td><td>30/01/2008</td></tr>
+                        <tr><td>24</td><td>Đặng Thái Sơn</td><td>22/01/2008</td></tr>
+                        <tr><td>25</td><td>Vũ Thanh Tâm</td><td>23/07/2008</td></tr>
+                        <tr><td>26</td><td>Hoàng Anh Thái</td><td>07/12/2008</td></tr>
+                        <tr><td>27</td><td>Trần Khánh Thành</td><td>19/03/2008</td></tr>
+                        <tr><td>28</td><td>Nguyễn Hoàng Phương Thảo</td><td>11/12/2008</td></tr>
+                        <tr><td>29</td><td>Nguyễn Thu Thảo</td><td>22/05/2008</td></tr>
+                        <tr><td>30</td><td>Nguyễn Ngọc Minh Thư</td><td>30/01/2008</td></tr>
+                        <tr><td>31</td><td>Ngọ Thị Thương</td><td>10/09/2008</td></tr>
+                        <tr><td>32</td><td>Vũ Đặng Bảo Thy</td><td>15/10/2008</td></tr>
+                        <tr><td>33</td><td>Nguyễn Thị Thùy Trang</td><td>04/04/2008</td></tr>
+                        <tr><td>34</td><td>Đồng Thụy Bảo Trâm</td><td>25/01/2008</td></tr>
+                        <tr><td>35</td><td>Nguyễn Ngọc Bảo Trân</td><td>10/03/2008</td></tr>
+                        <tr><td>36</td><td>Võ Minh Trí</td><td>09/06/2008</td></tr>
+                        <tr><td>37</td><td>Võ Minh Tuấn</td><td>09/01/2008</td></tr>
+                        <tr><td>38</td><td>Ngô Thị Ánh Tuyết</td><td>02/01/2008</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    
+        <!-- SƠ ĐỒ LỚP -->
+        <section class="class-map">
+            <h2>SƠ ĐỒ LỚP</h2>
+    
+            <div class="teacher">BÀN GIÁO VIÊN</div>
+    
+            <div class="groups">
+                <div class="group">
+                    <h4>TỔ 4</h4>
+                    <div class="seat">Huy - Tuấn</div>
+                    <div class="seat">Thành - Sơn</div>
+                    <div class="seat">Thy - Ngân</div>
+                    <div class="seat">Hảo - Phương Thảo</div>
+                </div>
+    
+                <div class="group">
+                    <h4>TỔ 3</h4>
+                    <div class="seat">Tâm - Hưng</div>
+                    <div class="seat">Minh - Hoài Phúc</div>
+                    <div class="seat">Thái - Quốc Anh</div>
+                    <div class="seat">Tuyết - Thu Thảo</div>
+                    <div class="seat">Dương</div>
+                </div>
+    
+                <div class="group">
+                    <h4>TỔ 2</h4>
+                    <div class="seat">Thương - Phong</div>
+                    <div class="seat">Khang - Duyên</div>
+                    <div class="seat">Thư - Bình</div>
+                    <div class="seat">Quỳnh - Ân</div>
+                    <div class="seat">Hoàng Phúc - Quốc Đạt</div>
+                </div>
+    
+                <div class="group">
+                    <h4>TỔ 1</h4>
+                    <div class="seat">An - Trí</div>
+                    <div class="seat">My - Phát</div>
+                    <div class="seat">Trang - Trâm</div>
+                    <div class="seat">Trân - Phong Đạt</div>
+                    <div class="seat">Hào - Phú</div>
+                </div>
+            </div>
+            <div class="teacher-subject">
+                <h3>Giáo viên bộ môn</h3>
+            
+                <ul>
+                    <li><b>Toán:</b> Trần Anh Dũng</li>
+                    <li><b>Văn:</b> Nguyễn Thị Hương Thơm</li>
+                    <li><b>Anh:</b> Nguyễn Ngọc Thanh Hiền</li>
+                    <li><b>Tin:</b> Nguyễn Thị Quỳnh Trúc</li>
+                    <li><b>Lí:</b> Huỳnh Thị Khánh Trang</li>
+                    <li><b>Hóa:</b> Tống Thị Lệ Hằng</li>
+                    <li><b>Sinh:</b> Nguyễn Bùi Mỹ Linh</li>
+                    <li><b>Sử:</b> Lê Thị Phương Thảo</li>
+                    <li><b>GDQP:</b> Phan Duy Khiêm</li>
+                    <li><b>Thể dục:</b> Trương Thanh Hòa</li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <div class="footer-container">
+    
+            <!-- Cột 1 -->
+            <div class="footer-col footer-brand">
+                <div class="footer-logo">
+                    <img src="img/logonhom.png" alt="Logo Ngũ Sắc">
+                </div>
+            
+                <h2 class="footer-title">
+                    <span>Ngũ Sắc</span> Ngày Xuân
+                </h2>
+            
+                <p class="footer-desc">
+                    Tuổi trẻ là những ngày rực rỡ nhất.  
+                    Hãy sống hết mình, yêu thương hết lòng  
+                    và trân trọng những khoảnh khắc bên nhau.
+                </p>
+            </div>
+    
+            <!-- Cột 2 -->
+            <div class="footer-col">
+                <h3>Thanh điều hướng</h3>
+                <ul>
+                    <li><a href="Trangchu.html">Trang chủ</a></li>
+                    <li><a href="thanhvien.html">Thành viên</a></li>
+                    <li><a href="Danhsachlop.html">Danh sách lớp</a></li>
+                    <li><a href="Lichhoc.html">Lịch học</a></li>
+                    <li><a href="Dangki.html">Đăng kí</a></li>
+                    <li><a href="Lop10.html">Lớp 10</a></li>
+                    <li><a href="Lop11.html">Lớp 11</a></li>
+                    <li><a href="Lop12.html">Lớp 12</a></li>
+                </ul>
+            </div>
+    
+            <!-- Cột 3 -->
+            <div class="footer-col">
+                <h3>Liên hệ tụi mình</h3>
+                <ul>
+                    <li>Đặng Thái Sơn</li>
+                    <li>Đặng Thị Mỹ Duyên</li>
+                    <li>Tăng Gia Huy</li>
+                    <li>Nguyễn Hoàng Phương Thảo</li>
+                    <li>Võ Minh Tuấn</li>
+                </ul>
+            </div>
+    
+            <!-- Cột 4 -->
+            <div class="footer-col">
+                <h3>THPT Huỳnh Văn Nghệ</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/Thpthvn.tu" target="_blank">Facebook Trường</a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=61584605757923" target="_blank">Facebook Đoàn Trường</a></li>
+                    <li><a href="https://thpthuynhvannghehcm.edu.vn/" target="_blank">Website Trường</a></li>
+                    <li><a href="https://edui.hcm.edu.vn/" target="_blank">Website Sở GD-ĐT TP Hồ Chí MInh</a></li>
+                </ul>
+            </div>
+    
+           
+    
+        </div>
+    
+        <div class="footer-bottom">
+            Copyright © 2026 Ngũ Sắc Ngày Xuân • Lớp 12.2 • Designed by Sơn
+        </div>
+    </footer>
+    
+</body>
+</html>
+

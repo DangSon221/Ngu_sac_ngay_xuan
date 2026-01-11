@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <link rel="shortcut icon" href="img/logonhom.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  
+    <header>
+        <a href="index.html" class="logo">
+            <img src="img/logonhom.png" width="80">
+        </a>        
+        <nav class="navigation">
+            <a href="index.html">Trang chủ</a>
+            <nav>
+                <ul>
+                    <li class="dropdown">
+                        <a href="#">Giới thiệu</a>
+                        <ul class="dropdown-content">
+                            <li><a href="thanhvien.html">Thành viên nhóm</a></li>
+                            <li><a href="Danhsachlop.html">Danh sách lớp</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="select-box">
+                <select onchange="location.href=this.value">
+                    <option value="">Lớp</option>
+                    <option value="Lop10.html">Lớp 10</option>
+                    <option value="Lop11.html">Lớp 11</option>
+                    <option value="Lop12.html">Lớp 12</option>
+                </select>
+            </div>
+            <a href="Lichhoc.html">Lịch học</a>
+            <a href="Dangki.html">Đăng kí</a>
+            
+            <div class="search">
+                <input type="text" placeholder="Tìm kiếm">
+            </div>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="overlay"></div>
+    
+        <div class="hero-content">
+            <div class="hero-text">
+                <h4>Huỳnh Văn Nghệ</h4>
+                <h1>MÁI TRƯỜNG<br><span>MẾN YÊU</span></h1>
+
+    
+                <p>  Xin chào! <br>
+                    <h2>Chúng mình là nhóm <span> NGŨ SẮC</span> <span>NGÀY XUÂN</span></h2>
+                    <br>
+                    "Cùng nhau đón Tết sum vầy"<br><br>
+
+                    Lớp 12.2<br>
+                    
+                </p>
+    
+                <div class="buttons">
+                    <a href="#" class="btn primary">Khám phá ngay</a>
+                    
+                </div>
+            </div>
+    
+            
+        </div>
+    </section>
+
+
+    <!-- ===== LỜI NÓI ĐẦU ===== -->
+    <section class="intro">
+        <h1>Lời nói đầu</h1>
+        <p>
+            Xin chào! Chúng mình là nhóm Ngũ Sắc Ngày Xuân, lớp 12.2.
+            Trang web được tạo ra nhằm lưu giữ kỷ niệm và kết nối tập thể
+            trong không khí Tết.
+
+            <div class="video-bg">
+                <video controls>
+                    <source src="video/video.mp4" type="video/mp4">
+                </video>
+            </div>
+    </section>
+   
+
+    <!-- ===== THÔNG TIN TRƯỜNG ===== -->
+    <section class="school-overview">
+        <!-- TIÊU ĐỀ -->
+        <h2 class="section-title">Giới thiệu Trường THPT Huỳnh Văn Nghệ</h2>
+        <p class="section-desc">
+          Nơi lưu giữ truyền thống – bồi đắp tri thức – nuôi dưỡng khát vọng tuổi trẻ.
+        </p>
+      
+        <!-- NỘI DUNG -->
+        <div class="content-grid">
+          <!-- TIMELINE -->
+          <div class="timeline">
+            <h3>📜 Lịch sử & Hành trình kiến tạo</h3>
+      
+            <div class="timeline-item">
+              <span>1975</span>
+              <p>Trường chính thức đi vào hoạt động, đặt nền móng giáo dục tại vùng đất anh hùng.</p>
+            </div>
+      
+            <div class="timeline-item">
+              <span>Tượng đài</span>
+              <p>Dựng tượng danh nhân Huỳnh Văn Nghệ – biểu tượng “văn võ song toàn”.</p>
+            </div>
+      
+            <div class="timeline-item">
+              <span>Kỷ nguyên mới</span>
+              <p>Đạt chuẩn Quốc gia, cơ sở vật chất hiện đại, niềm tự hào học sinh Bình Dương.</p>
+            </div>
+          </div>
+      
+          <!-- THÔNG TIN NỔI BẬT -->
+          <div class="info-cards">
+            <div class="card orange">
+              <h4>66 năm thành lập</h4>
+              <span>1959 – 2025</span>
+            </div>
+      
+            <div class="card blue">
+              <h4>Huân chương Lao động hạng Ba</h4>
+              <span>Năm 1999</span>
+            </div>
+      
+            <div class="card purple">
+              <h4>16 đời hiệu trưởng</h4>
+              <span>Hiện tại: Thầy Nguyễn Tấn Tài</span>
+            </div>
+      
+            <div class="card gray">
+              <h4>Bằng khen Thủ tướng</h4>
+              <span>1997 – 2003</span>
+            </div>
+      
+            <div class="card violet wide">
+              <h4>Trường đạt chuẩn Quốc gia</h4>
+              <span>UBND tỉnh Bình Dương công nhận – 2010</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <section class="members-section">
+
+        <!-- CỘT TRÁI -->
+        <div class="members-left">
+            <h2>Thành Viên</h2>
+
+            <div class="member-cards">
+                <div class="member-card">
+                    <img src="img/Tuan.jpg">
+                    <span>Minh Tuấn</span>
+                </div>
+
+                <div class="member-card">
+                    <img src="img/Huy.jpg">
+                    <span>Gia Huy</span>
+                </div>
+            </div>
+            <a href="thanhvien.html" class="btns-xem-them">Xem thêm</a>
+            
+        </div>
+
+        <!-- CỘT GIỮA -->
+        <div class="members-center">
+            <h2>Tên Thành Viên</h2>
+
+            <div class="name-list">
+                <div class="name-item white">
+                    🔍 Đặng Thái Sơn
+                </div>
+                <div class="name-item dark-green">
+                    🔍 Đặng Thị Mỹ Duyên
+                </div>
+                <div class="name-item yellow">
+                    🔍 Tăng Gia Huy
+                </div>
+                <div class="name-item red">
+                    🔍 Nguyễn Hoàng Phương Thảo
+                </div>
+                <div class="name-item pink">
+                    🔍 Võ Minh Tuấn
+                </div>
+            </div>
+        </div>
+
+        <!-- CỘT PHẢI -->
+        <div class="members-right">
+            <div class="info-box">
+                <h3>Nguồn gốc</h3>
+                <p>
+                    “Ngũ sắc ngày xuân” là cách gọi mang tính văn hóa – biểu tượng, 
+                    chỉ năm màu sắc truyền thống thường xuất hiện trong Tết và lễ hội mùa xuân của người Việt, 
+                    tượng trưng cho phúc – lộc – thọ – an – hòa, sự sinh sôi và khởi đầu tốt lành.
+                </p>
+            </div>
+
+
+            <div class="info-box">
+                <h3>NGŨ SẮC NGÀY XUÂN</h3>
+                <p>
+                    Cùng nhau đón tết sum vầy
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+    <footer class="footer">
+        <div class="footer-container">
+    
+            <!-- Cột 1 -->
+            <div class="footer-col footer-brand">
+                <div class="footer-logo">
+                    <img src="img/logonhom.png" alt="Logo Ngũ Sắc">
+                </div>
+            
+                <h2 class="footer-title">
+                    <span>Ngũ Sắc</span> Ngày Xuân
+                </h2>
+            
+                <p class="footer-desc">
+                    Tuổi trẻ là những ngày rực rỡ nhất.  
+                    Hãy sống hết mình, yêu thương hết lòng  
+                    và trân trọng những khoảnh khắc bên nhau.
+                </p>
+            </div>
+    
+            <!-- Cột 2 -->
+            <div class="footer-col">
+                <h3>Thanh điều hướng</h3>
+                <ul>
+                    <li><a href="Trangchu.html">Trang chủ</a></li>
+                    <li><a href="thanhvien.html">Thành viên</a></li>
+                    <li><a href="Danhsachlop.html">Danh sách lớp</a></li>
+                    <li><a href="Lichhoc.html">Lịch học</a></li>
+                    <li><a href="Dangki.html">Đăng kí</a></li>
+                    <li><a href="Lop10.html">Lớp 10</a></li>
+                    <li><a href="Lop11.html">Lớp 11</a></li>
+                    <li><a href="Lop12.html">Lớp 12</a></li>
+                </ul>
+            </div>
+    
+            <!-- Cột 3 -->
+            <div class="footer-col">
+                <h3>Liên hệ tụi mình</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/tgsun22" target="_blank">Đặng Thái Sơn</a></li>
+                    <li><a href="https://www.facebook.com/angthimyduyen.31159" target="_blank">Đặng Thị Mỹ Duyên</a></li>
+                    <li><a href="https://www.facebook.com/gia.huy.679483" target="_blank">Tăng Gia Huy</a></li>
+                    <li><a href="https://www.facebook.com/Capybara1009" target="_blank">Nguyễn Hoàng Phương Thảo</a></li>
+                    <li><a href="https://www.facebook.com/vo.tuan.365813" target="_blank">Võ Minh Tuấn</a></li>
+                </ul>
+            </div>
+    
+            <!-- Cột 4 -->
+            <div class="footer-col">
+                <h3>THPT Huỳnh Văn Nghệ</h3>
+                <ul>
+                    <li>Đ/c: P. Tân Uyên, Tp. Hồ Chí Minh</li>
+                    <li><a href="https://www.facebook.com/Thpthvn.tu" target="_blank">Facebook Trường</a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=61584605757923" target="_blank">Facebook Đoàn Trường</a></li>
+                    <li><a href="https://thpthuynhvannghehcm.edu.vn/" target="_blank">Website Trường</a></li>
+                    
+                </ul>
+            </div>
+    
+           
+    
+        </div>
+    
+        <div class="footer-bottom">
+            Copyright © 2026 Ngũ Sắc Ngày Xuân • Lớp 12.2 • Designed by Sơn
+        </div>
+    </footer>
+</body>
+</html>
+

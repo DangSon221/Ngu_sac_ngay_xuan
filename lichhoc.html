@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lịch học</title>
+    <link rel="shortcut icon" href="img/logonhom.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  
+    <header>
+        <a href="index.html" class="logo">
+            <img src="img/logonhom.png" width="80">
+        </a>        
+        <nav class="navigation">
+            <a href="index.html">Trang chủ</a>
+            <nav>
+                <ul>
+                    <li class="dropdown">
+                        <a href="#">Giới thiệu</a>
+                        <ul class="dropdown-content">
+                            <li><a href="thanhvien.html">Thành viên nhóm</a></li>
+                            <li><a href="Danhsachlop.html">Danh sách lớp</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="select-box">
+                <select onchange="location.href=this.value">
+                    <option value="">Lớp</option>
+                    <option value="Lop10.html">Lớp 10</option>
+                    <option value="Lop11.html">Lớp 11</option>
+                    <option value="Lop12.html">Lớp 12</option>
+                </select>
+            </div>
+            <a href="Lichhoc.html">Lịch học</a>
+            <a href="Dangki.html">Đăng kí</a>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Tìm kiếm">
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <!-- THỜI KHÓA BIỂU -->
+        <div class="tkb-wrapper">
+    
+            <div class="tkb">
+                <h2>THỜI KHÓA BIỂU<br><span>BUỔI SÁNG</span></h2>
+                <table>
+                    <tr>
+                        <th>Thứ hai</th><th>Thứ ba</th><th>Thứ tư</th>
+                        <th>Thứ năm</th><th>Thứ sáu</th><th>Thứ bảy</th>
+                    </tr>
+                    <tr><td>Chào cờ</td><td>Sinh</td><td>Hoá</td><td>Hoá</td><td>Tiếng Anh</td><td></td></tr>
+                    <tr><td>Sinh hoạt</td><td>Văn</td><td>Lí CĐ</td><td>Tiếng Anh</td><td>Tiếng Anh</td><td></td></tr>
+                    <tr><td>GDĐP</td><td>Văn</td><td>Lí</td><td>Sinh</td><td>Lí</td><td></td></tr>
+                    <tr><td>Toán</td><td>Sử</td><td>Toán</td><td>Văn</td><td>Toán CĐ</td><td></td></tr>
+                    <tr><td></td><td>Văn CĐ</td><td>Sử TN</td><td>Toán</td><td></td><td></td></tr>
+                </table>
+            </div>
+    
+            <div class="tkb">
+                <h2>THỜI KHÓA BIỂU<br><span>BUỔI CHIỀU</span></h2>
+                <table>
+                    <tr>
+                        <th>Thứ hai</th><th>Thứ ba</th><th>Thứ tư</th>
+                        <th>Thứ năm</th><th>Thứ sáu</th><th>Thứ bảy</th>
+                    </tr>
+                    <tr><td>Thể dục</td><td>Toán TN</td><td>HĐTN</td><td>Anh TN</td><td>Sinh TN</td><td></td></tr>
+                    <tr><td>Thể dục</td><td>Toán TN</td><td>HĐTN</td><td>Lí TN</td><td>Hoá TN</td><td></td></tr>
+                    <tr><td>GDQP</td><td>Văn TN</td><td>Tin</td><td></td><td></td><td></td></tr>
+                    <tr><td></td><td>Văn TN</td><td>Tin</td><td></td><td></td><td></td></tr>
+                </table>
+            </div>
+    
+            
+    
+        </div>
+    
+        <!-- LỊCH THI -->
+        <h1 class="title">LỊCH THI CUỐI KÌ I</h1>
+    
+        <table class="exam">
+            <tr>
+                <th>STT</th>
+                <th>NGÀY</th>
+                <th>MÔN</th>
+                <th>THỜI GIAN<br>LÀM BÀI</th>
+                <th>GIỜ MỞ BÌ ĐỀ</th>
+                <th>GIỜ PHÁT ĐỀ</th>
+                <th>GIỜ LÀM BÀI</th>
+                <th>GIỜ THU BÀI</th>
+            </tr>
+            <tr><td>1</td><td>27/12/2025</td><td>Ngữ văn</td><td>90 phút</td><td>7h00</td><td>7h10</td><td>7h15</td><td>8h45</td></tr>
+            <tr><td>2</td><td></td><td>Lịch sử</td><td>45 phút</td><td>9h00</td><td>9h10</td><td>9h15</td><td>10h00</td></tr>
+            <tr><td>3</td><td>29/12/2025</td><td>Tiếng Anh</td><td>60 phút</td><td>7h00</td><td>7h10</td><td>7h20</td><td>8h20</td></tr>
+            <tr><td>4</td><td></td><td>Vật lí</td><td>45 phút</td><td>8h30</td><td>8h40</td><td>8h45</td><td>9h30</td></tr>
+            <tr><td>5</td><td>30/12/2025</td><td>Toán</td><td>90 phút</td><td>7h00</td><td>7h10</td><td>7h15</td><td>8h45</td></tr>
+            <tr><td>6</td><td></td><td>Địa</td><td>45 phút</td><td>9h00</td><td>9h10</td><td>9h15</td><td>10h00</td></tr>
+            <tr><td>7</td><td>31/12/2025</td><td>Hoá học</td><td>45 phút</td><td>7h00</td><td>7h10</td><td>7h15</td><td>8h00</td></tr>
+            <tr><td>8</td><td></td><td>Tin học</td><td>45 phút</td><td>8h20</td><td>8h25</td><td>8h30</td><td>9h15</td></tr>
+            <tr><td>9</td><td></td><td>Sinh học</td><td>45 phút</td><td>9h25</td><td>9h30</td><td>9h35</td><td>10h20</td></tr>
+            <tr><td>10</td><td></td><td>GDKTPL</td><td>45 phút</td><td>9h25</td><td>9h30</td><td>9h35</td><td>10h20</td></tr>
+        </table>
+    
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+    
+            <!-- Cột 1 -->
+            <div class="footer-col footer-brand">
+                <div class="footer-logo">
+                    <img src="img/logonhom.png" alt="Logo Ngũ Sắc">
+                </div>
+            
+                <h2 class="footer-title">
+                    <span>Ngũ Sắc</span> Ngày Xuân
+                </h2>
+            
+                <p class="footer-desc">
+                    Tuổi trẻ là những ngày rực rỡ nhất.  
+                    Hãy sống hết mình, yêu thương hết lòng  
+                    và trân trọng những khoảnh khắc bên nhau.
+                </p>
+            </div>
+    
+            <!-- Cột 2 -->
+            <div class="footer-col">
+                <h3>Thanh điều hướng</h3>
+                <ul>
+                    <li><a href="Trangchu.html">Trang chủ</a></li>
+                    <li><a href="thanhvien.html">Thành viên</a></li>
+                    <li><a href="Danhsachlop.html">Danh sách lớp</a></li>
+                    <li><a href="Lichhoc.html">Lịch học</a></li>
+                    <li><a href="Dangki.html">Đăng kí</a></li>
+                    <li><a href="Lop10.html">Lớp 10</a></li>
+                    <li><a href="Lop11.html">Lớp 11</a></li>
+                    <li><a href="Lop12.html">Lớp 12</a></li>
+                </ul>
+            </div>
+    
+            <!-- Cột 3 -->
+            <div class="footer-col">
+                <h3>Liên hệ tụi mình</h3>
+                <ul>
+                    <li>Đặng Thái Sơn</li>
+                    <li>Đặng Thị Mỹ Duyên</li>
+                    <li>Tăng Gia Huy</li>
+                    <li>Nguyễn Hoàng Phương Thảo</li>
+                    <li>Võ Minh Tuấn</li>
+                </ul>
+            </div>
+    
+            <!-- Cột 4 -->
+            <div class="footer-col">
+                <h3>THPT Huỳnh Văn Nghệ</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/Thpthvn.tu" target="_blank">Facebook Trường</a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=61584605757923" target="_blank">Facebook Đoàn Trường</a></li>
+                    <li><a href="https://thpthuynhvannghehcm.edu.vn/" target="_blank">Website Trường</a></li>
+                    <li><a href="https://edui.hcm.edu.vn/" target="_blank">Website Sở GD-ĐT TP Hồ Chí MInh</a></li>
+                </ul>
+            </div>
+    
+           
+    
+        </div>
+    
+        <div class="footer-bottom">
+            Copyright © 2026 Ngũ Sắc Ngày Xuân • Lớp 12.2 • Designed by Sơn
+        </div>
+    </footer>
+</body>
+
+</html>
+

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng kí thành viên</title>
+    <link rel="shortcut icon" href="img/logonhom.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  
+    <header>
+        <a href="index.html" class="logo">
+            <img src="img/logonhom.png" width="80">
+        </a>        
+        <nav class="navigation">
+            <a href="index.html">Trang chủ</a>
+            <nav>
+                <ul>
+                    <li class="dropdown">
+                        <a href="#">Giới thiệu</a>
+                        <ul class="dropdown-content">
+                            <li><a href="thanhvien.html">Thành viên nhóm</a></li>
+                            <li><a href="Danhsachlop.html">Danh sách lớp</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="select-box">
+                <select onchange="location.href=this.value">
+                    <option value="">Lớp</option>
+                    <option value="Lop10.html">Lớp 10</option>
+                    <option value="Lop11.html">Lớp 11</option>
+                    <option value="Lop12.html">Lớp 12</option>
+                </select>
+            </div>
+            <a href="Lichhoc.html">Lịch học</a>
+            <a href="Dangki.html">Đăng kí</a>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Tìm kiếm">
+            </div>
+        </nav>
+    </header>
+
+    
+    <main class="box">
+
+        <div class="form-box">
+            <h2>Đơn xin đăng kí thành viên</h2>
+            <input type="text" placeholder="Tên đăng nhập">
+            <input type="text" placeholder="Họ và Tên">
+            <input type="password" placeholder="Mật khẩu">
+            <input type="date">
+
+            <div class="subject-box">
+                <h3>Tổ hợp môn của bạn</h3>
+                <div class="subjects">
+                    <label class="checkbox"><input type="checkbox"><span class="checkmark"></span> Toán</label>
+                    <label class="checkbox"><input type="checkbox"><span class="checkmark"></span> Ngữ văn</label>
+                    <label class="checkbox"><input type="checkbox"><span class="checkmark"></span> Tiếng Anh</label>
+                    <label class="checkbox"><input type="checkbox"><span class="checkmark"></span> Vật lý</label>
+                    <label class="checkbox"><input type="checkbox"><span class="checkmark"></span> Sinh học</label>
+                    <label class="checkbox"><input type="checkbox"><span class="checkmark"></span> Hóa học</label>
+                    <label class="checkbox"><input type="checkbox"><span class="checkmark"></span> Lịch sử</label>
+                    <label class="checkbox"><input type="checkbox"><span class="checkmark"></span> Địa lý</label>
+                    <label class="checkbox"><input type="checkbox"><span class="checkmark"></span> Công nghệ</label>
+                    <label class="checkbox"><input type="checkbox"><span class="checkmark"></span> Tin học</label>
+                    <label class="checkbox"><input type="checkbox"><span class="checkmark"></span> GDKTPL</label>
+                </div>
+            </div>
+
+            <div class="note">
+                <textarea placeholder="Năng khiếu của bạn là gì?"></textarea>
+                <textarea placeholder="Sở thích của bạn"></textarea>
+            </div>
+
+            <!-- checkbox ẩn -->
+            <input type="checkbox" id="successToggle" hidden>
+
+            <!-- FORM -->
+            <label for="successToggle" class="submit-btn">Đăng ký</label>
+
+            <!-- POPUP -->
+            <div class="success-overlay">
+                <div class="success-box">
+                    <div class="check-icon">✔</div>
+                    <h2>ĐÃ ĐĂNG KÍ XONG!</h2>
+                    <p>NGŨ SẮC NGÀY XUÂN đã nhận được hồ sơ của bạn.<br>
+                    Chào mừng thành viên mới!</p>
+
+                    <!-- nút đóng -->
+                    <label for="successToggle" class="close-btn">Đóng</label>
+                </div>
+            </div>            
+        </div>
+    </main>
+
+
+    <footer class="footer">
+        <div class="footer-container">
+    
+            <!-- Cột 1 -->
+            <div class="footer-col footer-brand">
+                <div class="footer-logo">
+                    <img src="img/logonhom.png" alt="Logo Ngũ Sắc">
+                </div>
+            
+                <h2 class="footer-title">
+                    <span>Ngũ Sắc</span> Ngày Xuân
+                </h2>
+            
+                <p class="footer-desc">
+                    Tuổi trẻ là những ngày rực rỡ nhất.  
+                    Hãy sống hết mình, yêu thương hết lòng  
+                    và trân trọng những khoảnh khắc bên nhau.
+                </p>
+            </div>
+    
+            <!-- Cột 2 -->
+            <div class="footer-col">
+                <h3>Thanh điều hướng</h3>
+                <ul>
+                    <li><a href="Trangchu.html">Trang chủ</a></li>
+                    <li><a href="thanhvien.html">Thành viên</a></li>
+                    <li><a href="Danhsachlop.html">Danh sách lớp</a></li>
+                    <li><a href="Lichhoc.html">Lịch học</a></li>
+                    <li><a href="Dangki.html">Đăng kí</a></li>
+                    <li><a href="Lop10.html">Lớp 10</a></li>
+                    <li><a href="Lop11.html">Lớp 11</a></li>
+                    <li><a href="Lop12.html">Lớp 12</a></li>
+                </ul>
+            </div>
+    
+            <!-- Cột 3 -->
+            <div class="footer-col">
+                <h3>Liên hệ tụi mình</h3>
+                <ul>
+                    <li>Đặng Thái Sơn</li>
+                    <li>Đặng Thị Mỹ Duyên</li>
+                    <li>Tăng Gia Huy</li>
+                    <li>Nguyễn Hoàng Phương Thảo</li>
+                    <li>Võ Minh Tuấn</li>
+                </ul>
+            </div>
+    
+            <!-- Cột 4 -->
+            <div class="footer-col">
+                <h3>THPT Huỳnh Văn Nghệ</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/Thpthvn.tu" target="_blank">Facebook Trường</a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=61584605757923" target="_blank">Facebook Đoàn Trường</a></li>
+                    <li><a href="https://thpthuynhvannghehcm.edu.vn/" target="_blank">Website Trường</a></li>
+                    <li><a href="https://edui.hcm.edu.vn/" target="_blank">Website Sở GD-ĐT TP Hồ Chí MInh</a></li>
+                </ul>
+            </div>
+    
+           
+    
+        </div>
+    
+        <div class="footer-bottom">
+            Copyright © 2026 Ngũ Sắc Ngày Xuân • Lớp 12.2 • Designed by Sơn
+        </div>
+    </footer>
+        
+    
+
+    
+</body>
+</html>
