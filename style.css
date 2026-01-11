@@ -1714,5 +1714,195 @@ td {
 
 }
 
+/* =========================
+   RESPONSIVE MOBILE
+   ========================= */
+@media (max-width: 768px) {
+
+  /* BODY */
+  body {
+    background-attachment: scroll;
+    padding-top: 90px;
+  }
+
+  /* HEADER */
+  header {
+    padding: 10px 20px;
+    flex-wrap: wrap;
+  }
+
+  .navigation {
+    transform: none;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .navigation a,
+  .navigation select {
+    margin: 8px 12px;
+    font-size: 1em;
+  }
+
+  /* HERO */
+  .hero {
+    height: auto;
+    top: 0;
+    padding: 60px 0;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .hero-text {
+    margin-left: 0;
+  }
+
+  .hero-text h1 {
+    font-size: 42px;
+  }
+
+  /* INTRO */
+  .intro {
+    padding: 40px 6%;
+  }
+
+  .intro h1 {
+    font-size: 30px;
+  }
+
+  .intro p {
+    font-size: 14px;
+  }
+
+  /* VIDEO */
+  .video-container {
+    width: 100%;
+    max-width: 100%;
+    margin: 20px auto;
+  }
+
+  /* CONTENT GRID */
+  .content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-top: 60px;
+  }
+
+  /* LỚP – GIỚI THIỆU */
+  .gioithieu-layout {
+    flex-direction: column;
+    margin-left: 0;
+    gap: 30px;
+  }
+
+  .image-box,
+  .gioithieu-text {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .main-img {
+    height: 260px;
+  }
+
+  /* TABLE */
+  .table-scroll {
+    max-height: 400px;
+  }
+
+  table {
+    font-size: 13px;
+  }
+
+  /* FORM */
+  .box {
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 40px;
+  }
+
+  .form-box {
+    width: 100%;
+    min-width: unset;
+  }
+
+  /* MEMORY */
+  .memory-box {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .memory-img {
+    margin: 0 0 20px;
+  }
+
+  /* MEMBERS */
+  .members-section {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .member-cards {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* FOOTER */
+  .footer {
+    padding: 40px 20px 20px;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .footer::before,
+  .footer-bottom::before {
+    left: 20px;
+    right: 20px;
+  }
+
+  /* GROUP / CARD */
+  .the-1,
+  .the-2,
+  .the-3,
+  .the-4,
+  .the-5 {
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+  }
+
+  .right h2 {
+    font-size: 26px;
+  }
+
+  .right p {
+    font-size: 16px;
+  }
+
+  /* NHÓM */
+  .nhom {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+
+  .anh-nhom {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
 
 
