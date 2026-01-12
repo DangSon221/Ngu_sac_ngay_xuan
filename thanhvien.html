@@ -71,22 +71,6 @@
             <audio src="music/noinaycoanh.mp3"></audio>
             
         </div>
-        <script>
-            const card = document.querySelector('.music-card');
-            const music = document.getElementById('music-son');
-            
-            let isPlaying = false;
-            
-            card.addEventListener('click', () => {
-                if (!isPlaying) {
-                    music.play();
-                    isPlaying = true;
-                } else {
-                    music.pause();
-                    isPlaying = false;
-                }
-            });
-            </script>
       
         <div class="right">
             <h2>Đặng Thái Sơn</h2>
@@ -230,41 +214,37 @@
       </div>
 
       <script>
-let currentAudio = null;
-let currentCard = null;
-
-document.querySelectorAll('.left').forEach(card => {
-    const img = card.querySelector('.music-card');
-    const audio = card.querySelector('audio');
-
-    img.addEventListener('click', () => {
-
-        // Nếu click lại đúng thẻ đang phát → dừng
-        if (currentAudio === audio) {
-            audio.pause();
-            audio.currentTime = 0;
-            card.classList.remove('playing');
-            currentAudio = null;
-            currentCard = null;
-            return;
-        }
-
-        // Dừng bài cũ
-        if (currentAudio) {
-            currentAudio.pause();
-            currentAudio.currentTime = 0;
-            currentCard.classList.remove('playing');
-        }
-
-        // Phát bài mới
-        audio.play();
-        card.classList.add('playing');
-        currentAudio = audio;
-        currentCard = card;
-    });
-});
-</script>
-
+        let currentAudio = null;
+        let currentCard = null;
+        
+        document.querySelectorAll('.left').forEach(card => {
+            const img = card.querySelector('.music-card');
+            const audio = card.querySelector('audio');
+        
+            img.addEventListener('click', () => {
+        
+                if (currentAudio === audio) {
+                    audio.pause();
+                    audio.currentTime = 0;
+                    card.classList.remove('playing');
+                    currentAudio = null;
+                    currentCard = null;
+                    return;
+                }
+        
+                if (currentAudio) {
+                    currentAudio.pause();
+                    currentAudio.currentTime = 0;
+                    currentCard.classList.remove('playing');
+                }
+        
+                audio.play();
+                card.classList.add('playing');
+                currentAudio = audio;
+                currentCard = card;
+            });
+        });
+        </script>
 
 
 
