@@ -7,7 +7,6 @@
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
-
 /* Background */
 body {
     background: url("img/nentet5.jpg");
@@ -17,9 +16,6 @@ body {
     background-attachment: fixed;
     padding-top: 120px;
 }
-
-
-
 
 /*Menu */
 header {
@@ -1635,31 +1631,64 @@ td {
     align-items: center;
     position: relative;
 }
+
+/* Ảnh thẻ nhạc */
 .music-card {
     width: 100%;
-    max-width: 280px;     /* chỉnh to/nhỏ tại đây */
-    height: auto;         /* 👈 quan trọng: KHÔNG bị cắt */
-    border-radius: 16px;  /* bo góc nhẹ cho đẹp (có thể =0) */
-    object-fit: contain;  /* đảm bảo hiện toàn bộ ảnh */
-
+    max-width: 280px;
+    height: auto;
+    border-radius: 16px;
+    object-fit: contain;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
 }
+
+/* Avatar */
 .music-avatar {
     position: absolute;
-
     width: 230px;
     height: 230px;
     border-radius: 50%;
     object-fit: cover;
-
-    /* === CANH CHUẨN VÒNG TRÒN TRONG CARD === */
-    top: 42px;
+    top: 10%;
     left: 50%;
     transform: translateX(-50%);
-
     border: 3px solid #eaeaea;
     box-shadow: 0 8px 20px rgba(0,0,0,0.35);
-    top: 10%;
+    z-index: 2;
 }
+
+/* ================== CỬ CHỈ NHẤN ================== */
+
+/* vòng sóng gợi ý click */
+.music-card::after {
+    content: "";
+    position: absolute;
+    inset: -6px;
+    border-radius: 20px;
+    border: 3px solid #1db954;
+    animation: pulse 1.6s infinite;
+    pointer-events: none;
+}
+
+/* khi đang phát → tắt hiệu ứng */
+.left.playing .music-card::after {
+    animation: none;
+    opacity: 0;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1.15);
+        opacity: 0;
+    }
+}
+
 
 
 /* RIGHT */
@@ -2111,6 +2140,7 @@ td {
 
 
 }
+
 
 
 
