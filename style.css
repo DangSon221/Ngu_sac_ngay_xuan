@@ -7,6 +7,7 @@
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
+
 /* Background */
 body {
     background: url("img/nentet5.jpg");
@@ -16,6 +17,9 @@ body {
     background-attachment: fixed;
     padding-top: 120px;
 }
+
+
+
 
 /*Menu */
 header {
@@ -671,7 +675,6 @@ td {
 .gioithieu-layout {
     display: flex;
     gap: 40px;
-
     margin-left: -120px;  /* tự đẩy sang phải */
     margin-top: 40px;
 }
@@ -1103,7 +1106,7 @@ td {
 .intro {
     background: #fff7ec;
     text-align: center;
-    padding: 70px 5%;
+    padding: 70px 20%;
     margin-top: -150px;
 }
 
@@ -1116,24 +1119,21 @@ td {
     margin: 20px 0 30px;
 }
 .video-container {
-  width: 100%;
-  max-width: 900px;
-  margin: 30px auto;
-
-  position: relative;
-  aspect-ratio: 16 / 9;
-  overflow: hidden;
-  border-radius: 20px;
-}
-
-.video-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+  
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
 
 /* ===== SCHOOL ===== */
 
@@ -1659,6 +1659,7 @@ td {
     z-index: 2;
 }
 
+
 /* ================== CỬ CHỈ NHẤN ================== */
 
 /* vòng sóng gợi ý click */
@@ -1688,8 +1689,6 @@ td {
         opacity: 0;
     }
 }
-
-
 
 /* RIGHT */
 .right {
@@ -1741,8 +1740,8 @@ td {
     object-fit: cover;
     margin: 3%;
     border-radius: 18px;
-
 }
+
 
 /* =========================
    MOBILE FIX – FULL
@@ -2140,6 +2139,7 @@ td {
 
 
 }
+
 
 
 
