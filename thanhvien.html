@@ -26,21 +26,21 @@
                         <a href="#">Giới thiệu</a>
                         <ul class="dropdown-content">
                             <li><a href="thanhvien.html">Thành viên nhóm</a></li>
-                            <li><a href="danhsachlop.html">Danh sách lớp</a></li>
+                            <li><a href="Danhsachlop.html">Danh sách lớp</a></li>
                         </ul>
                     </li>
                 </ul>
             </nav>
             <div class="select-box">
                 <select onchange="location.href=this.value">
-                    <option value="">lớp</option>
-                    <option value="lop10.html">Lớp 10</option>
-                    <option value="lop11.html">Lớp 11</option>
-                    <option value="lop12.html">Lớp 12</option>
+                    <option value="">Lớp</option>
+                    <option value="Lop10.html">Lớp 10</option>
+                    <option value="Lop11.html">Lớp 11</option>
+                    <option value="Lop12.html">Lớp 12</option>
                 </select>
             </div>
-            <a href="lichhoc.html">Lịch học</a>
-            <a href="dangki.html">Đăng kí</a>
+            <a href="Lichhoc.html">Lịch học</a>
+            <a href="Dangki.html">Đăng kí</a>
             </div>
             <div class="search">
                 <input type="text" placeholder="Tìm kiếm">
@@ -66,9 +66,27 @@
           <div class="icon-gift">👒</div>
       
           <div class="left">
-            <img src="img/st.jpg" class="music-card">
-            <img src="img/sơn.jpg" class="music-avatar">
+            <img src="img/ST.jpg" class="music-card">
+            <img src="img/Son.jpg" class="music-avatar">
+            <audio src="music/noinaycoanh.mp3"></audio>
+            
         </div>
+        <script>
+            const card = document.querySelector('.music-card');
+            const music = document.getElementById('music-son');
+            
+            let isPlaying = false;
+            
+            card.addEventListener('click', () => {
+                if (!isPlaying) {
+                    music.play();
+                    isPlaying = true;
+                } else {
+                    music.pause();
+                    isPlaying = false;
+                }
+            });
+            </script>
       
         <div class="right">
             <h2>Đặng Thái Sơn</h2>
@@ -95,8 +113,9 @@
             <div class="icon-gift">🍃</div>
         
             <div class="left">
-              <img src="img/em.jpg" class="music-card">
-              <img src="img/duyen.jpg" class="music-avatar">
+              <img src="img/EM.jpg" class="music-card">
+              <img src="img/Duyen.jpg" class="music-avatar">
+              <audio src="music/camkithihoa.mp3"></audio>
           </div>
         
             <div class="right">
@@ -123,8 +142,9 @@
             <div class="icon-gift">🧧🌸</div>
         
             <div class="left">
-              <img src="img/btl.jpg" class="music-card">
-              <img src="img/huy.jpg" class="music-avatar">
+              <img src="img/BTL.jpg" class="music-card">
+              <img src="img/Huy.jpg" class="music-avatar">
+              <audio src="music/yeunguoicouocmo.mp3"></audio>
           </div>
         
             <div class="right">
@@ -151,8 +171,9 @@
             <div class="icon-gift">🧨</div>
         
             <div class="left">
-              <img src="img/hgh.jpg" class="music-card">
-              <img src="img/tuan.jpg" class="music-avatar">
+              <img src="img/HGH.jpg" class="music-card">
+              <img src="img/Tuan.jpg" class="music-avatar">
+              <audio src="music/thaythe.mp3"></audio>
           </div>
         
             <div class="right">
@@ -179,8 +200,9 @@
             <div class="icon-gift">🪙</div>
         
             <div class="left">
-              <img src="img/cv.jpg" class="music-card">
-              <img src="img/thao.jpg" class="music-avatar">
+              <img src="img/CV.jpg" class="music-card">
+              <img src="img/Thao.jpg" class="music-avatar">
+              <audio src="music/changvang.mp3"></audio>
           </div>
         
             <div class="right">
@@ -206,6 +228,42 @@
     </div>
       
       </div>
+
+      <script>
+let currentAudio = null;
+let currentCard = null;
+
+document.querySelectorAll('.left').forEach(card => {
+    const img = card.querySelector('.music-card');
+    const audio = card.querySelector('audio');
+
+    img.addEventListener('click', () => {
+
+        // Nếu click lại đúng thẻ đang phát → dừng
+        if (currentAudio === audio) {
+            audio.pause();
+            audio.currentTime = 0;
+            card.classList.remove('playing');
+            currentAudio = null;
+            currentCard = null;
+            return;
+        }
+
+        // Dừng bài cũ
+        if (currentAudio) {
+            currentAudio.pause();
+            currentAudio.currentTime = 0;
+            currentCard.classList.remove('playing');
+        }
+
+        // Phát bài mới
+        audio.play();
+        card.classList.add('playing');
+        currentAudio = audio;
+        currentCard = card;
+    });
+});
+</script>
 
 
 
@@ -236,14 +294,14 @@
             <div class="footer-col">
                 <h3>Thanh điều hướng</h3>
                 <ul>
-                    <li><a href="trangchu.html">Trang chủ</a></li>
+                    <li><a href="Trangchu.html">Trang chủ</a></li>
                     <li><a href="thanhvien.html">Thành viên</a></li>
-                    <li><a href="danhsachlop.html">Danh sách lớp</a></li>
-                    <li><a href="lichhoc.html">Lịch học</a></li>
-                    <li><a href="dangki.html">Đăng kí</a></li>
-                    <li><a href="lop10.html">Lớp 10</a></li>
-                    <li><a href="lop11.html">Lớp 11</a></li>
-                    <li><a href="lop12.html">Lớp 12</a></li>
+                    <li><a href="Danhsachlop.html">Danh sách lớp</a></li>
+                    <li><a href="Lichhoc.html">Lịch học</a></li>
+                    <li><a href="Dangki.html">Đăng kí</a></li>
+                    <li><a href="Lop10.html">Lớp 10</a></li>
+                    <li><a href="Lop11.html">Lớp 11</a></li>
+                    <li><a href="Lop12.html">Lớp 12</a></li>
                 </ul>
             </div>
     
@@ -280,7 +338,4 @@
     </footer>
 </body>
 </html>
-
-
-
 
