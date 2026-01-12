@@ -1631,32 +1631,30 @@ td {
     align-items: center;
     position: relative;
 }
-
-/* Ảnh thẻ nhạc */
 .music-card {
     width: 100%;
-    max-width: 280px;
-    height: auto;
-    border-radius: 16px;
-    object-fit: contain;
-    cursor: pointer;
-    position: relative;
-    z-index: 1;
-}
+    max-width: 280px;     
+    height: auto;         
+    border-radius: 16px;  
+    object-fit: contain;  
 
-/* Avatar */
+}
 .music-avatar {
     position: absolute;
+
     width: 230px;
     height: 230px;
     border-radius: 50%;
     object-fit: cover;
-    top: 10%;
+
+   
+    top: 42px;
     left: 50%;
     transform: translateX(-50%);
+
     border: 3px solid #eaeaea;
     box-shadow: 0 8px 20px rgba(0,0,0,0.35);
-    z-index: 2;
+    top: 10%;
 }
 
 
@@ -2139,6 +2137,7 @@ td {
 
 
 }
+
 
 
 
